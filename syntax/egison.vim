@@ -13,7 +13,7 @@ syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
-syn match egiSpecial "[{}()]"
+syn match egiSpecial "[{}()\[\]|]"
 
 syn match egiInt "\v[0-9]+"
 
