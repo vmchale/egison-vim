@@ -16,7 +16,7 @@ syn match egiBoolean "#f"
 
 syn match egiInt "\v[0-9]+"
 
-syn keyword egiKeyword define lambda
+syn keyword egiKeyword define lambda let
 
 syn match egiSpecial +\v\\["n\\]+
 syn region egiString start=+"+ end=+"+ contains=atsSpecial
