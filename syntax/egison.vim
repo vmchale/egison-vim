@@ -8,7 +8,7 @@ if !exists('main_syntax')
 endif
 
 syn keyword egiTodo TODO FIXME contained
-syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_0-9]*"
+syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 
 syn match egiInt "\v[0-9]+"
 
