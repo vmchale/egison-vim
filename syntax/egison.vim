@@ -9,7 +9,7 @@ endif
 
 syn match egiComment "\v;.*$" contains=atsTodo,@Spell
 syn keyword egiTodo TODO FIXME contained
-syn match egiType "\v[a-zA-Z_0-9α-ωΑ-Ω]*"
+syn match egiType "\v[A-Z_0-9Α-Ω]*"
 syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
