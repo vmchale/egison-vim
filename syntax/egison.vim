@@ -16,6 +16,7 @@ syn keyword egiKeyword define lambda
 
 highlight link egiKeyword Keyword
 highlight link egiIdentifier Identifier
+highlight link egiInt Number
 
 let b:current_syntax = 'egison'
 
