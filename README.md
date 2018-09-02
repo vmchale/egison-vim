@@ -1,5 +1,3 @@
 # egison-vim
 
-## Installation
-
-## Configuration
+Syntax highlighting for [Egison](https://www.egison.org/).
