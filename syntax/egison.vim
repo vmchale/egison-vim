@@ -13,6 +13,7 @@ syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
+syn match egiSpecial "[{}()]"
 
 syn match egiInt "\v[0-9]+"
 
@@ -31,6 +32,7 @@ highlight link egiBoolean Boolean
 highlight link egiChar Character
 highlight link egiString String
 highlight link egiType Type
+highlight link egiSpecial Special
 
 let b:current_syntax = 'egison'
 
