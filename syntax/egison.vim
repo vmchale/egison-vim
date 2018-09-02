@@ -10,6 +10,7 @@ endif
 syn match egiComment "\v;.*$" contains=atsTodo,@Spell
 syn keyword egiTodo TODO FIXME contained
 syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_0-9α-ωΑ-Ω]*"
+syn match egiType "\v[a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
 
@@ -29,6 +30,7 @@ highlight link egiComment Comment
 highlight link egiBoolean Boolean
 highlight link egiChar Character
 highlight link egiString String
+highlight link egiType Type
 
 let b:current_syntax = 'egison'
 
