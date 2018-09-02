@@ -14,7 +14,7 @@ syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
 syn match egiSpecial "[{}()\[\]|<>@$]"
-syn match egiOperator "[+-]"
+syn match egiOperator "[+-/]"
 
 syn match egiInt "\v[0-9]+"
 
