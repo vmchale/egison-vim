@@ -13,12 +13,12 @@ syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_\-0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
-syn match egiSpecial "[{}()\[\]|<>@$]"
+syn match egiSpecial "[{}()\[\]|<>@$%]"
 syn match egiOperator "[+-/*]"
 
 syn match egiInt "\v[0-9]+"
 
-syn match egiKeyword "match-all"
+" TODO: match-all keyword
 syn keyword egiKeyword define lambda let if match
 
 syn match egiSpecial +\v\\["n\\]+
