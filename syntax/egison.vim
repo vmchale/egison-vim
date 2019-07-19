@@ -26,7 +26,6 @@ syn region egiString start=+"+ end=+"+ contains=atsSpecial
 syn match egiChar "\v'.'"
 syn match egiChar "\v'.*'" contains=atsSpecial
 
-highlight link egiKeyword Keyword
 highlight link egiIdentifier Identifier
 highlight link egiInt Number
 highlight link egiComment Comment
@@ -36,6 +35,7 @@ highlight link egiString String
 highlight link egiType Type
 highlight link egiSpecial Special
 highlight link egiOperator Operator
+highlight link egiKeyword Keyword
 
 let b:current_syntax = 'egison'
 
