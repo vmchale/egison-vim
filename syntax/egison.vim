@@ -20,7 +20,8 @@ syn match egiOperator "[+-/*]"
 syn match egiInt "\v[0-9]+"
 
 " TODO: match-all keyword
-syn keyword egiKeyword define lambda let if match
+" also let*
+syn keyword egiKeyword define lambda cambda let if match apply letrec
 
 syn match egiSpecial +\v\\["n\\]+
 syn region egiString start=+"+ end=+"+ contains=atsSpecial
