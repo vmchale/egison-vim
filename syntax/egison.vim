@@ -10,7 +10,8 @@ endif
 syn match egiComment "\v;.*$" contains=atsTodo,@Spell
 syn keyword egiTodo TODO FIXME contained
 syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
-syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_\-0-9α-ωΑ-Ω]*"
+" TODO: include ?
+syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_∂\-0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
 syn match egiSpecial "[{}()\[\]|<>@$%]"
