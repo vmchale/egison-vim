@@ -10,22 +10,24 @@ endif
 syn match egiComment "\v;.*$" contains=atsTodo,@Spell
 syn keyword egiTodo TODO FIXME contained
 syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
-syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_\-0-9α-ωΑ-Ω]*"
+" TODO: include ?
+syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_∂\-0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
-syn match egiSpecial "[{}()\[\]|<>@$]"
+syn match egiSpecial "[{}()\[\]|<>@$%]"
 syn match egiOperator "[+-/*]"
 
 syn match egiInt "\v[0-9]+"
 
-syn keyword egiKeyword define lambda let if match
+" TODO: match-all keyword
+" also let*
+syn keyword egiKeyword define lambda cambda let if match apply letrec
 
 syn match egiSpecial +\v\\["n\\]+
 syn region egiString start=+"+ end=+"+ contains=atsSpecial
 syn match egiChar "\v'.'"
 syn match egiChar "\v'.*'" contains=atsSpecial
 
-highlight link egiKeyword Keyword
 highlight link egiIdentifier Identifier
 highlight link egiInt Number
 highlight link egiComment Comment
@@ -35,6 +37,7 @@ highlight link egiString String
 highlight link egiType Type
 highlight link egiSpecial Special
 highlight link egiOperator Operator
+highlight link egiKeyword Keyword
 
 let b:current_syntax = 'egison'
 
