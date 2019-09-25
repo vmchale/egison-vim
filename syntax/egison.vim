@@ -14,14 +14,16 @@ syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 syn match egiIdentifier "\v[a-zα-ω][a-zA-Z_∂\-0-9α-ωΑ-Ω]*"
 syn match egiBoolean "#t"
 syn match egiBoolean "#f"
-syn match egiSpecial "[{}()\[\]|<>@$%]"
+syn match egiSpecial "[{}()\[\]|<>@$%]!"
 syn match egiOperator "[+-/*]"
 
 syn match egiInt "\v[0-9]+"
 
 " TODO: match-all keyword
+" generate-tensor
 " also let*
-syn keyword egiKeyword define lambda cambda let if match apply letrec
+" is 'something' a keyword?
+syn keyword egiKeyword define lambda cambda let if match letrec apply 
 
 syn match egiSpecial +\v\\["n\\]+
 syn region egiString start=+"+ end=+"+ contains=atsSpecial
