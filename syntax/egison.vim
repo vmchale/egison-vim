@@ -7,7 +7,7 @@ if !exists('main_syntax')
   let main_syntax = 'egison'
 endif
 
-syn match egiComment "\v;.*$" contains=atsTodo,@Spell
+syn match egiComment "\v;.*$" contains=egiTodo,@Spell
 syn keyword egiTodo TODO FIXME contained
 syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 " TODO: include ?
@@ -23,7 +23,7 @@ syn match egiInt "\v[0-9]+"
 " generate-tensor
 " also let*
 " is 'something' a keyword?
-syn keyword egiKeyword define lambda cambda let if match letrec apply 
+syn keyword egiKeyword define lambda cambda let if match letrec apply do
 
 syn match egiSpecial +\v\\["n\\]+
 syn region egiString start=+"+ end=+"+ contains=egiSpecial
