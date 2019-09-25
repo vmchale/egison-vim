@@ -26,9 +26,9 @@ syn match egiInt "\v[0-9]+"
 syn keyword egiKeyword define lambda cambda let if match letrec apply 
 
 syn match egiSpecial +\v\\["n\\]+
-syn region egiString start=+"+ end=+"+ contains=atsSpecial
+syn region egiString start=+"+ end=+"+ contains=egiSpecial
 syn match egiChar "\v'.'"
-syn match egiChar "\v'.*'" contains=atsSpecial
+syn match egiChar "\v'.*'" contains=egiSpecial
 
 highlight link egiIdentifier Identifier
 highlight link egiInt Number
