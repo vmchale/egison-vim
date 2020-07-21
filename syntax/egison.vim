@@ -8,6 +8,7 @@ if !exists('main_syntax')
 endif
 
 syn match egiComment "\v;.*$" contains=egiTodo,@Spell
+syn match egiComment "\v--.*$" contains=egiTodo,@Spell
 syn keyword egiTodo TODO FIXME contained
 syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 " TODO: include ?
@@ -16,6 +17,7 @@ syn match egiBoolean "#t"
 syn match egiBoolean "#f"
 syn match egiSpecial "[{}()\[\]|<>@$%]!"
 syn match egiOperator "[+-/*]"
+syn match egiBind ":="
 
 syn match egiInt "\v[0-9]+"
 
@@ -40,6 +42,7 @@ highlight link egiType Type
 highlight link egiSpecial Special
 highlight link egiOperator Operator
 highlight link egiKeyword Keyword
+highlight link egiBind Operator
 
 let b:current_syntax = 'egison'
 
