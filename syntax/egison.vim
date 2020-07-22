@@ -8,7 +8,6 @@ if !exists('main_syntax')
 endif
 
 syn match egiComment "\v;.*$" contains=egiTodo,@Spell
-syn match egiComment "\v--.*$" contains=egiTodo,@Spell
 syn keyword egiTodo TODO FIXME contained
 syn match egiType "\v[A-Z_0-9Α-Ω][a-zA-Z_0-9α-ωΑ-Ω]*"
 " TODO: include ?
