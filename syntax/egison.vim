@@ -17,6 +17,7 @@ syn match egiBoolean "#f"
 syn match egiSpecial "[{}()\[\]|<>@$%]!"
 syn match egiOperator "[+-/*]"
 syn match egiBind ":="
+syntax match dhallComment '\v--.*$' contains=@Spell,dhallTodo
 
 syn match egiInt "\v[0-9]+"
 
@@ -24,7 +25,7 @@ syn match egiInt "\v[0-9]+"
 " generate-tensor
 " also let*
 " is 'something' a keyword?
-syn keyword egiKeyword define lambda cambda let if match letrec apply do
+syn keyword egiKeyword define lambda cambda let if match letrec apply do as with
 
 syn match egiSpecial +\v\\["n\\]+
 syn region egiString start=+"+ end=+"+ contains=egiSpecial
