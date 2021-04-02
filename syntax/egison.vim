@@ -25,7 +25,7 @@ syn match egiInt "\v[0-9]+"
 " generate-tensor
 " also let*
 " is 'something' a keyword?
-syn keyword egiKeyword define lambda cambda let if match letrec apply do as with
+syn keyword egiKeyword define lambda cambda let if match letrec apply do as with def in
 
 syn match egiSpecial +\v\\["n\\]+
 syn region egiString start=+"+ end=+"+ contains=egiSpecial
